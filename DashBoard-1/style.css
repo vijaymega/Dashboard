@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&family=Roboto:ital,wght@1,100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+@media only screen and (min-width: 1220px) {
+  .container{
+    background-color: whitesmoke;
+    border-radius: 13px;
+    height: 100vh;
+    width: 100%;
+  }
+  .navbar{
+    background-color: #2F4F4F;
+    padding: 20px;
+    opacity: 0.8;
+    height: 93vh;
+    width: 2%;
+    margin: 0;
+  }
+  .icons{
+    font-size: 20px;
+    color: white;
+  }
+  .icons i{
+    padding-bottom: 60px;
+    cursor: pointer;
+  }
+  .search-file{
+    border-bottom: 1px solid black;
+    display: inline-block;
+    background: white;
+    border-radius: 15px;
+    position: relative; 
+    margin-top: -560px;
+    padding-left: 30px;
+    margin-left: 90px;
+    font-size: 12px;
+    display: flex;
+    height: 33px;
+    width: 600px;
+
+  }
+  .search-file input{
+    padding-left: 20px;
+    border-radius: 15px;
+    width: 570px;
+    border: none;
+    outline: none;
+    border-bottom: none;
+  }
+   .image{
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 15px;
+    margin-top: -40px;
+    display: flex;
+    float: right;
+    height: 40px;
+    width: 40px;
+  }
+  div h4{
+    position: relative;
+    margin-right: 70px;
+    margin-top: -29px;
+    display: flex;
+    float: right;
+    
+  }
+  .dashboard h2{
+    position: relative;
+    margin-left: 90px;
+    margin-top: 30px;
+  }
+  .dashboard h5{
+    position: relative;
+    margin-left: 509px;
+    margin-top: -21px;
+    font-size: 14px;
+    color: red;
+  }
+  .upload{
+    background-color: #2F4F4F;
+    border-radius: 15px;
+    position: relative;
+    margin-right: 8px;
+    margin-top: -28px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    padding: 10px;
+    width: 170px;
+    border: none;
+    opacity: 0.8;
+  }
+  h6{
+    position: relative;
+    margin-left: 90px;
+    margin-top: 30px;
+    font-weight: 600; 
+    font-size: 16px;   
+  }
+  .box{
+    background: white;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 15px;
+    height: 150px;
+    width: 300px;
+  }
+  .box img{
+    border-radius: 10px;
+    height: 50px;
+    margin: 14px;
+    width: 50px;
+  }
+  .box-text{
+    margin-left: 80px;
+    margin-top: -50px;
+    font-size: 16px;
+    color: black;
+  }
+  .text{
+    margin-right: 145px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 14px;
+    color: gray;
+  }
+  .recent p{
+    margin-left: 90px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .headings{
+    margin-left: 75px;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+  .files img{
+    margin-left: 74px;
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+  }
+  .data{
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  .name{
+    border: 1px solid black;
+    font-weight: bold;
+    position: relative;
+    color: grey;
+    padding: 5px;
+    width: 350px;
+    border: none;
+  }
+  .date{
+    border: 1px solid black;
+    font-weight: bold;
+    color: grey;
+    width: 200px;
+    border: none;
+  }
+  .size{
+    border: 1px solid black;
+    font-weight: bold;
+    color: grey;
+    border: none; 
+    width: 130px;
+  }
+  .last{
+    border: 1px solid black;
+    font-weight: bold;
+    color: grey;
+    width: 200px;
+    border: none;
+  }
+  .table-image{
+    display: inline-block;
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  .data p{
+    display: inline-block;
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 10px;
+  }
+  .row-data{
+    font-size: 14px;
+  }
+  .small-box{
+    background-color: whitesmoke;
+    border-radius: 13px;
+    margin-left: 750px;
+    margin-top: -220px;
+    height: 280px;
+    width: 260px;
+  }
+  .upgrade{
+    background-color: blue;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 20px;
+    color: white;
+    padding: 12px;
+    width: 130px;
+    opacity: 0.8;
+    border: none;
+  }
+  .pro-1{
+    margin: 16px;
+    width: 200px;
+  }
+  .pro-2{
+    margin: 16px;
+    width: 200px;
+  }
+  .pro-3{
+    margin: 16px;
+    width: 200px;
+  }
+  .pro-4{
+    margin-left: 10px;
+    width: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 1220px) {
+  .container{
+    background-color: whitesmoke;
+    border-radius: 13px;
+    height: 100vh;
+    width: 100%;
+  }
+  .navbar{
+    background-color: #2F4F4F;
+    padding: 20px;
+    opacity: 0.8;
+    height: 93vh;
+    width: 2%;
+    margin: 0;
+  }
+  .icons{
+    font-size: 20px;
+    color: white;
+  }
+  .icons i{
+    padding-bottom: 60px;
+    cursor: pointer;
+  }
+  .container input{
+    background: white;
+    border-radius: 15px;
+    position: relative;
+    padding-left: 20px; 
+    margin-top: -560px;
+    margin-left: 90px;
+    font-size: 12px;
+    display: flex;
+    outline: none;
+    padding: 6px;
+    height: 20px;
+    width: 500px;
+    border: none;
+  }
+   .image{
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 15px;
+    margin-top: -5px;
+    display: flex;
+    float: right;
+    height: 40px;
+    width: 40px;
+  }
+  div h4{
+    position: relative;
+    margin-right: 20px;
+    margin-top: 5px;
+    display: flex;
+    float: right;
+    
+  }
+  .dashboard h2{
+    position: relative;
+    margin-left: 90px;
+    margin-top: 30px;
+  }
+  .dashboard h5{
+    position: relative;
+    margin-left: 409px;
+    margin-top: -21px;
+    font-size: 14px;
+    color: red;
+  }
+  .upload{
+    background-color: #2F4F4F;
+    border-radius: 15px;
+    position: relative;
+    margin-right: 8px;
+    margin-top: -28px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    padding: 10px;
+    width: 170px;
+    border: none;
+    opacity: 0.8;
+  }
+  h6{
+    position: relative;
+    margin-left: 90px;
+    margin-top: 30px;
+    font-weight: 600; 
+    font-size: 16px;   
+  }
+  .box{
+    background: white;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 90px;
+    margin-top: 10px;
+    height: 150px;
+    width: 230px;
+  }
+  .box img{
+    border-radius: 10px;
+    height: 50px;
+    margin: 14px;
+    width: 50px;
+  }
+  .box-text{
+    margin-left: 80px;
+    margin-top: -50px;
+    font-size: 16px;
+    color: black;
+  }
+  .text{
+    margin-right: 75px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 14px;
+    color: gray;
+  }
+  .recent p{
+    margin-left: 90px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .headings{
+    margin-left: 75px;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+  .files img{
+    margin-left: 74px;
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+  }
+  .data{
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  .name{
+    border: 1px solid black;
+    font-weight: bold;
+    position: relative;
+    color: grey;
+    padding: 5px;
+    width: 350px;
+    border: none;
+  }
+  .date{
+    border: 1px solid black;
+    font-weight: bold;
+    color: grey;
+    width: 200px;
+    border: none;
+  }
+  .size{
+    border: 1px solid black;
+    font-weight: bold;
+    color: grey;
+    border: none; 
+    width: 130px;
+  }
+  .last{
+    border: 1px solid black;
+    font-weight: bold;
+    color: grey;
+    width: 200px;
+    border: none;
+  }
+  .table-image{
+    display: inline-block;
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  .data p{
+    display: inline-block;
+    position: absolute;
+    margin-top: 23px;
+  }
+  .row-data{
+    font-size: 14px;
+  }
+  .small-box{
+    background-color: whitesmoke;
+    border-radius: 13px;
+    margin-left: 750px;
+    margin-top: -220px;
+    height: 280px;
+    width: 260px;
+  }
+  .upgrade{
+    background-color: blue;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 20px;
+    color: white;
+    padding: 12px;
+    width: 130px;
+    opacity: 0.8;
+    border: none;
+  }
+  .pro-1{
+    margin: 16px;
+    width: 200px;
+  }
+  .pro-2{
+    margin: 16px;
+    width: 200px;
+  }
+  .pro-3{
+    margin: 16px;
+    width: 200px;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .container{
+      background-color: whitesmoke;
+      border-radius: 13px;
+      height: 100vh;
+      width: 100%;
+    }
+    .navbar{
+      background-color: #2F4F4F;
+      border-radius: 13px;
+      padding: 20px;
+      opacity: 0.8;
+      height: 93vh;
+      width: 2%;
+      margin: 0;
+    }
+    .icons{
+      margin: auto;
+      font-size: 20px;
+      color: white;
+    }
+    .icons i{
+      padding-top: 40px;
+      cursor: pointer;
+    }
+    .container input{
+      background: white;
+      /* background: #f6f6f6; */
+      border-radius: 15px;
+      position: relative;
+      padding-left: 60px; 
+      margin-top: -560px;
+      margin-left: 90px;
+      font-size: 12px;
+      display: flex;
+      outline: none;
+      padding: 6px;
+      height: 20px;
+      width: 400px;
+      border: none;
+    }
+     .image{
+      background-size: cover;
+      border-radius: 10px;
+      position: relative;
+      margin-right: 15px;
+      margin-top: -5px;
+      display: flex;
+      float: right;
+      height: 40px;
+      width: 40px;
+    }
+    div h4{
+      position: relative;
+      margin-right: 20px;
+      margin-top: 5px;
+      display: flex;
+      float: right;
+      
+    }
+    .dashboard h2{
+      position: relative;
+      margin-left: 90px;
+      margin-top: 30px;
+    }
+    .dashboard h5{
+      position: relative;
+      margin-left: 409px;
+      margin-top: -21px;
+      font-size: 14px;
+      color: red;
+    }
+    .upload{
+      background-color: #2F4F4F;
+      border-radius: 15px;
+      position: relative;
+      margin-right: 8px;
+      margin-top: -28px;
+      cursor: pointer;
+      color: white;
+      float: right;
+      padding: 10px;
+      width: 170px;
+      border: none;
+      opacity: 0.8;
+    }
+    .storage h6{
+      position: relative;
+      margin-left: 90px;
+      margin-top: 30px;
+      font-weight: 600; 
+      font-size: 16px;   
+    }
+    .box{
+      background: white;
+      display: inline-block;
+      border-radius: 10px;
+      margin-left: 100px;
+      margin-top: 10px;
+      height: 150px;
+      width: 200px;
+    }
+    .box img{
+      border-radius: 10px;
+      height: 40px;
+      margin: 14px;
+      width: 40px;
+    }
+    .box-text{
+      margin-left: 80px;
+      margin-top: -50px;
+      font-size: 16px;
+      color: black;
+    }
+    .text{
+      margin-right: 64px;
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 12px;
+      color: gray;
+    }
+    .recent p{
+      margin-left: 90px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .headings{
+      margin-left: 75px;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+     .data{
+      margin-left: 90px;
+      margin-top: 10px;
+    }
+    .name{
+      border: 1px solid black;
+      font-weight: bold;
+      position: relative;
+      color: grey;
+      padding: 5px;
+      width: 350px;
+      border: none;
+    }
+    .date{
+      border: 1px solid black;
+      font-weight: bold;
+      color: grey;
+      width: 200px;
+      border: none;
+    }
+    .size{
+      border: 1px solid black;
+      font-weight: bold;
+      color: grey;
+      border: none; 
+      width: 130px;
+    }
+    .last{
+      border: 1px solid black;
+      font-weight: bold;
+      color: grey;
+      width: 200px;
+      border: none;
+    }
+    .table-image{
+      display: inline-block;
+      margin-top: 10px;
+      height: 33px;
+      width: 33px;
+    }
+    .data p{
+      display: inline-block;
+      position: absolute;
+      margin-top: 23px;
+      margin-left: 15px;
+    }
+    .row-data{
+      font-size: 14px;
+    }
+    .small-box{
+      background-color: whitesmoke;
+      border-radius: 13px;
+      margin-left: 750px;
+      margin-top: -220px;
+      height: 280px;
+      width: 260px;
+    }
+    .pro-1{
+      margin: 16px;
+    }
+    .pro-2{
+      margin: 16px;
+    }
+    .pro-3{
+      margin: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+      background-color: whitesmoke;
+      border-radius: 13px;
+      height: 100vh;
+      width: 100%;
+    }
+    .navbar{
+      background-color: #2F4F4F;
+      border-radius: 13px;
+      opacity: 0.8;
+      height: 92vh;
+      width: 1%;
+      margin-left: 3px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  
+    .icons i{
+      font-size: 16px;
+      padding-top: 40px;
+      color: white;
+      margin-left: -3px;
+      cursor: pointer;
+    }
+    .container input{
+      background: white;
+      border-radius: 15px;
+      position: relative;
+      padding-left: 60px; 
+      margin-top: -560px;
+      margin-left: 70px;
+      font-size: 12px;
+      display: flex;
+      outline: none;
+      padding: 3px;
+      padding-left: 20px;
+      height: 20px;
+      width: 290px;
+      border: none;
+    }
+     .image{
+      background-size: cover;
+      border-radius: 5px;
+      position: relative;
+      margin-right: 15px;
+      margin-top: -5px;
+      display: flex;
+      float: right;
+      height: 30px;
+      width: 30px;
+    }
+    div h4{
+      position: relative;
+      margin-right: 20px;
+      font-size: 15px;
+      margin-top: 4px;
+      display: flex;
+      float: right;
+      
+    }
+    .dashboard h2{
+      position: relative;
+      margin-left: 70px;
+      margin-top: 28px;
+      font-size: 21px;
+    }
+    .dashboard h5{
+      position: relative;
+      margin-left: 299px;
+      margin-top: -18px;
+      font-size: 12px;
+      color: red;
+    }
+    .upload{
+      background-color: #2F4F4F;
+      border-radius: 15px;
+      position: relative;
+      margin-right: 20px;
+      margin-top: -23px;
+      cursor: pointer;
+      font-size: 10px;
+      color: white;
+      float: right;
+      padding: 7px;
+      width: 110px;
+      border: none;
+      opacity: 0.8;
+    }
+    .storage h6{
+      position: relative;
+      margin-left: 70px;
+      margin-top: 15px;
+      font-weight: 600; 
+      font-size: 14px;   
+    }
+    .box{
+      /* background: #F5F5F5; */
+      background: white;
+      display: inline-block;
+      border-radius: 10px;
+      margin-left: 70px;
+      margin-top: 14px;
+      height: 120px;
+      width: 170px;
+    }
+    .box img{
+      border-radius: 10px;
+      height: 30px;
+      margin: 14px;
+      width: 30px;
+    }
+    .box-text{
+      margin-left: 60px;
+      margin-top: -40px;
+      font-size: 12px;
+      color: black;
+    }
+    .text{
+      margin-right: 55px;
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 10px;
+      color: gray;
+    }
+    .recent p{
+      margin-left: 70px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    /* .headings{
+      margin-left: 70px;
+      font-weight: bold;
+      margin-top: 16px;
+    } */
+    /* .files img{
+      margin-left: 74px;
+      margin-top: 5px;
+      height: 30px;
+      width: 30px;
+    } */
+    .data{
+      margin-left: 70px;
+      margin-top: 20px;
+    }
+    .name{
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 14px;
+      color: grey;
+      padding: 5px;
+      width: 350px;
+      border: none;
+    }
+    .date{
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 14px;
+      color: grey;
+      width: 200px;
+      border: none;
+    }
+    .size{
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 14px;
+      color: grey;
+      border: none; 
+      width: 130px;
+    }
+    .last{
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 14px;
+      color: grey;
+      width: 200px;
+      border: none;
+    }
+    .table-image{
+      display: inline-block;
+      margin-top: 20px;
+      height: 30px;
+      width: 30px;
+    }
+    .data p{
+      display: inline-block;
+      position: absolute;
+      margin-top: 29px;
+    }
+    .row-data{
+      font-size: 11px;
+    }
+    .small-box{
+      background-color: whitesmoke;
+      border-radius: 13px;
+      margin-left: 750px;
+      margin-top: -220px;
+      height: 280px;
+      width: 260px;
+    }
+    .upgrade{
+      background-color: blue;
+      border-radius: 15px;
+      position: relative;
+      margin-top: 20px;
+      color: white;
+      padding: 12px;
+      width: 130px;
+      opacity: 0.8;
+      border: none;
+    }
+    .pro-1{
+      margin-top: 10px;
+      margin: 16px;
+      width: 120px;
+      height: 10px;
+    }
+    .pro-2{
+      margin-top: 10px;
+      margin: 16px;
+      width: 120px;
+      height: 10px;
+    }
+    .pro-3{
+      margin-top: 10px;
+      margin: 16px;
+      width: 120px;
+      height: 10px;
+    }
+    .pro-4{
+      margin-left: 10px;
+      height: 10px;
+    }
+  
+}
+
